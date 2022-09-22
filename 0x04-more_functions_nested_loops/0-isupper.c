@@ -1,14 +1,18 @@
-#include <unistd.h>
-#include "main.h" 
+#include"main.h"
+#include <stdio.h>
 
 /**
- * _putchar - writes the character c to stdout
- * @c: The character to print
+ * _isupper - function to check if
+ * 	character is uppercase
  *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * @c: checks input of function
+ *
+ * Return: returns 1 if `c` is uppercase
+ * 	otherwise always 0 (Success)
  */
-int _putchar(char c)
+int _isupper(int c)
 {
-	return (write(1, &c, 1));
+	if (c >= 65 && c <= 90)
+	return (1);
+	return (0);
 }
