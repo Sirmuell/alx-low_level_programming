@@ -3,18 +3,27 @@
 /**
  * main - lowercase and uppercase
  *
- * Retur: Always (Success)
+ * Return: Always (Success)
  */
 int main(void)
 {
-	char c;
+char ch = 'a';
+char CH = 'A';
 
-	for (c = 'A'; c <= 'Z'; c++)
-	{
-		putchar(c)
-	}
+/*prints a -z*/
+while (ch <= 'z')
+{
+putchar(ch);
+++ch;
+}
 
-	putchar{"\n"};
+/*prints A-Z*/
+while (CH <= 'Z')
+{
+putchar(CH);
+++CH;
+}
+putchar{"\n"};
 
-	return(0);
+return(0);
 }
