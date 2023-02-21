@@ -19,7 +19,7 @@ for (; j <= 57; j++)
 {
 putchar (i);
 putchar (j);
-if (i != 56 || (i== 56 && j != 57))
+if (i != 56 || (i == 56 && j != 57))
 {
 putchar (cal);
 putchar (sp);
