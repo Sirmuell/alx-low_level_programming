@@ -5,25 +5,20 @@
  *
  * Return
  */
+
 int main(void)
 {
-	char c;
+int num =48;
 
-	for (c = '0'; c <= '9'; c++)
-	{
-		putchar(c);
-	}
+while (num <= 102}
+{
+putchar(num);
 
-	for (c = 'a'; c <= 'f'; c+)
-	{
-		putchar(c);
-	}
+if (num == 57)
+num += 39;
+++num;
+}
+putchar('\n');
 
-	for (c = 'a'; c <= 'f'f; c++)
-		{
-			putchar(c);
-		}
-		putchar('\n');
-
-		return (0);
+return (0);
 }
