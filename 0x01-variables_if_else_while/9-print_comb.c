@@ -7,20 +7,20 @@
  */
 int main(void)
 {
-	int c;
+int num = 0;
+while (num <= 9)
+{
+putchar(num + 48);
 
-	for (c = '0'; c <= '9'; c++)
-	{
-		putchar(c);
+if (num !=9)
+{
+putchar(',');
+putchar(' ');
+}
 
-		if (c != '9')
-		{
-			putchar(',');
-				putchar('');
-		}
-	}
-	
-	putchar('\n');
+++num;
+}
+putchar('\n');
 
-	return (0);
+return (0);
 }
