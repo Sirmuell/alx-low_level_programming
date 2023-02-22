@@ -26,8 +26,8 @@ fib1_half2 = fib1 % 10000000000;
 fib2_half2 = fib2 % 10000000000;
 for (count = 93; count < 99; count++)
 {
-half = fib1_half1 + fib 2_half;
-half = fib1_half2 + fib 2_half;
+half = fib1_half1 + fib2_half;
+half = fib1_half2 + fib2_half;
 if (fib1_half2 + fib2_half2 > 9999999999)
 {
 half1 += 1;
@@ -39,7 +39,7 @@ printf(", ");
 fib1_half1 = fib2_half1;
 fib1_half2 = fib2_half2;
 fib2_half1 = half1;
-fib2_half2 = fib2_half2;
+fib2_half2 = half2;
 }
 printf("\n");
 return (0);
