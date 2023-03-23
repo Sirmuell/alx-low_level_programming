@@ -1,34 +1,57 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "3-calc.h"
 
+int op_add(int a, int b);
+int op_sub(int a, int b);
+int op_mul(int a, int b);
+int op_div(int a, int b);
+int op_mod(int a, int b);
 /**
- * main - Entry point
- * @argc: length of command line arguments
- * @argv: double pointer to cli arguments
- * Return: 0
+ * op_add - Returns the sum of two numbers.
+ * @a: The first number.
+ * @b: The second number.
+ * Return: The sum of a and b.
  */
-int main(int argc, char *argv[])
+int op_add(int a, int b)
 {
-int (*func_ptr)(int, int);
-if (argc != 4)
+return (a + b);
+}
+/**
+ * op_sub - Returns the difference of two numbers.
+ * @a: The first number.
+ * @b: The second number.
+ * Return: The difference of a and b.
+ */
+int op_sub(int a, int b)
 {
-printf("Error\n");
-exit(98);
+return (a - b);
 }
-
-if (argv[2][1] != '\0')
+/**
+ * op_mul - Returns the product of two numbers.
+ * @a: The first number.
+ * @b: The second number.
+ * Return: The product of a and b.
+ */
+int op_mul(int a, int b)
 {
-printf("Error\n");
-exit(99);
+return (a * b);
 }
-
-func_ptr = get_op_func(argv[2]);
-if (func_ptr == NULL)
+/**
+ * op_div - Returns the division of two numbers.
+ * @a: The first number.
+ * @b: The second number.
+ * Return: The quotient of a and b.
+*/
+int op_div(int a, int b)
 {
-printf("Error\n");
-exit(99);
+return (a / b);
 }
-printf("%d\n", func_ptr(atoi(argv[1]), atoi(argv[3])));
+/**
+* op_mod - Returns the remainder of the division of two numbers.
+* @a: The first number.
+* @b: The second number.
+* Return: The remainder of the division of a by b.
+*/
+int op_mod(int a, int b)
+{
+return (a % b);
 }
-
